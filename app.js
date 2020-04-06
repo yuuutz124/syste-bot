@@ -90,7 +90,7 @@ channel.send(newserverEmbed)
 //owner contral panel
 
 
-const devs = ["ID developer",""];
+const devs = ["617035131416346626",""];
 
  
 client.on('ready', () => {
@@ -183,7 +183,7 @@ client.on("message", message => {
   });
 
 
- const smu = "2020/02/07";
+ const smu = "2020/05/06";
   client.on("message", message => {
     var argresult = message.content
       .split(` `)
@@ -197,8 +197,8 @@ client.on("message", message => {
       if (!devs.includes(message.author.id)) return;
       if (message.content.startsWith(data.prefix + "premium") | message.content.startsWith(data.prefix + "اشتراك")) {
         message.delete();
-        var start = moment()[2019, 11, 13];
-    var end   = moment([2019, 12, 13]);
+        var start = moment()[2020, 04, 06];
+    var end   = moment([2020, 05, 06]);
       let embed = new Discord.RichEmbed()
       .setColor('RANDOM')
       .setTitle('information About Your Premium')
@@ -207,8 +207,8 @@ client.on("message", message => {
        Today is : ** ${moment().format("dddd, MMMM YYYY")} **
        Your Plus Subscribe End in : ** ${smu} **  
        Registered in :  ** ${message.guild.name} **
-       Time left :   ** ${moment("20200207", "YYYYMMDD",  true).fromNow()} ** `)
-      .setFooter(`Developer By Piwi Group`)
+       Time left :   ** ${moment("20200506", "YYYYMMDD",  true).fromNow()} ** `)
+      .setFooter(`Developer By vPS Group`)
       .setTimestamp()
 
       message.channel.sendEmbed(embed)
